@@ -12,6 +12,7 @@ namespace Catalog.Domain.Model
         public string? Description { get; set; } = default!;
         public DateTime StartDate { get; set; } = default!;
         public DateTime EndDate { get; set; } = default!;
+        public License License { get; set; } = default!;
         public Guid LicenseID { get; set; } = default!;
         public bool Active { get; set; } = default!;
 

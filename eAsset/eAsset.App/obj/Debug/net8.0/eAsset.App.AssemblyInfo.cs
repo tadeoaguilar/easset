@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eAsset.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dd36dcd62c4322ac77ee00ca7a21daed1e7dd54")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3508ec8e345bdc8e0e0d4497c768da174579f435")]
 [assembly: System.Reflection.AssemblyProductAttribute("eAsset.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eAsset.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
