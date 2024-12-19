@@ -159,3 +159,7 @@ C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Wo
 C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\Carter.dll
+C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\FluentValidation.dll
+C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\MediatR.dll
+C:\gitlab\easset\eAsset\eAsset.App\bin\Debug\net8.0\MediatR.Contracts.dll

@@ -1,4 +1,4 @@
-﻿using Catalog.Infrastructure;
+﻿using Catalog.Database;
 using Microsoft.EntityFrameworkCore;
 
 namespace eAsset.App.Extensions

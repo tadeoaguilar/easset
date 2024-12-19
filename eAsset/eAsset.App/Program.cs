@@ -1,61 +1,47 @@
-using Catalog.Infrastructure;
+using Catalog.Database;
 using eAsset.App.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using Shared.Extensions;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
+var catalogAssembly = typeof(CatalogModule).Assembly;
+builder.Services
+    .AddCarterWithAssemblies(catalogAssembly);
+builder.Services
+    .AddMediatRWithAssemblies(catalogAssembly);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var connectionString = builder.Configuration.GetConnectionString("Database");
 builder.Services.AddDbContext<CatalogContext>((sp, options) =>
 {
     //options.UseSqlServer(connectionString);
     options.UseSqlServer(connectionString, b => b.MigrationsAssembly("eAsset.App"));
 });
+builder.Services.AddCatalogModule(builder.Configuration);
+//builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
-
+app.MapCarter();
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+/*if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
  //   await app.InitialiseDatabaseAsync();
-}
+}*/
 
 app.UseHttpsRedirection();
+//app.UseCatalogModule();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+//app.UseMigration<CatalogContext>();
 
 app.Run();
 
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+

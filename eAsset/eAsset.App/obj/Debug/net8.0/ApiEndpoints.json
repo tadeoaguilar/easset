@@ -1,21 +1,36 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__1",
-    "RelativePath": "weatherforecast",
-    "HttpMethod": "GET",
+    "ContainingType": "Catalog.Features.CreateTenant.CreateTenantEndpoint\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRoutes\u003Eb__0_0",
+    "RelativePath": "tenants",
+    "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Catalog.Features.CreateTenant.CreateTenantRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "WeatherForecast[]",
+        "Type": "Catalog.Features.CreateTenant.CreateTenantResponse",
         "MediaTypes": [
           "application/json"
         ],
-        "StatusCode": 200
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "EndpointName": "CreateTenant",
+    "Description": "Create Tenant",
+    "Summary": "Create Tenant"
   }
 ]
