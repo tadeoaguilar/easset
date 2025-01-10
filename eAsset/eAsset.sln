@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eAsset.App", "eAsset.App", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eAsset.App", "eAsset.App\eAsset.App.csproj", "{0E397FC7-3FF6-4F20-B3ED-48402A4E4C61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eAssetHost", "..\eAssetHost\eAssetHost.csproj", "{8A811D96-CBBD-428B-BF2A-3BE3AF100A47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "..\ServiceDefaults\ServiceDefaults.csproj", "{740CF694-1472-4F16-82BE-A392D14CD6BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{0E397FC7-3FF6-4F20-B3ED-48402A4E4C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E397FC7-3FF6-4F20-B3ED-48402A4E4C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E397FC7-3FF6-4F20-B3ED-48402A4E4C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A811D96-CBBD-428B-BF2A-3BE3AF100A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A811D96-CBBD-428B-BF2A-3BE3AF100A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A811D96-CBBD-428B-BF2A-3BE3AF100A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A811D96-CBBD-428B-BF2A-3BE3AF100A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740CF694-1472-4F16-82BE-A392D14CD6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740CF694-1472-4F16-82BE-A392D14CD6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740CF694-1472-4F16-82BE-A392D14CD6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740CF694-1472-4F16-82BE-A392D14CD6BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

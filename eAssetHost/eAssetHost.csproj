@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>6dc816c9-1848-40af-8296-96a30c937188</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../eAsset/eAsset.App/eAsset.App.csproj" />
+    <ProjectReference Include="../eAsset/Modules/Catalog/Catalog.csproj" />
+    <ProjectReference Include="../eAsset/Shared/Shared/Shared.csproj" />
+  </ItemGroup>
+
+</Project>
